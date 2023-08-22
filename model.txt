@@ -1,0 +1,12 @@
+// flutter
+import 'package:flutter/material.dart';
+// packages
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+// domain
+import 'package:flutter_sns/domain/firestore_user/firestore_user.dart';
+
+final loginProvider = ChangeNotifierProvider((ref) => LoginModel());
+
+class SignupModel extends ChangeNotifier {}
